@@ -21,7 +21,7 @@ class Form extends React.Component {
   
   handleSubmit = event => {
     event.preventDefault()
-    formData = {
+    let formData = {
       firstName: this.state.firstName, 
       lastname: this.state.lastName
     }
