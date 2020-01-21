@@ -25,7 +25,8 @@ class Form extends React.Component {
       firstName: this.state.firstName, 
       lastname: this.state.lastName
     }
-    this.sendFormDataSomewhere(formData)
+    let dataArray = this.state.submittedData.concat(formData)
+    this.setState({submittedData: dataArray})
   }
 
   render() {
